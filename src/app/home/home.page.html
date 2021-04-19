@@ -1,0 +1,175 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+<ion-grid>
+  <ion-row justify-content-center wrap>
+    <ion-col size-md="3" size-xs="0"></ion-col>
+    <ion-col size-md="6" size-xs="12">
+      <ion-slides pager="true" [options]="slideOpts" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" size-md="8" size-xs="12">
+        <ion-slide>
+          <ion-img src="assets/admin.jpeg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/logo.png"></ion-img>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-img src="assets/consultoria.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/contrato.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/estrategia.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/estructuracion.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/manual.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/optimal.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-grid>
+    <br>
+    <ion-row justify-content-center wrap> <!--Mision, vision, valores-->
+      <ion-col size-md="4" size-xs="12">
+        <ion-card>
+          <img src="assets/report.jpg" />
+          <ion-card-header>
+            <ion-card-title>Misión</ion-card-title>
+          </ion-card-header>
+          <ion-card-content >
+            Brindar soluciones y servicios a nuestros clientes ayudándoles a resolver todas sus inquietudes y necesidades de manera  eficiente, sustentable y competitiva a las necesidades financieras y de optimización operativa para cualquier talla y giro empresarial.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="4" size-xs="12">
+        <ion-card>
+          <img src="assets/vision.jpg" />
+          <ion-card-header>
+            <ion-card-title>Visión</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Cumplir ampliamente las expectativas de nuestros clientes, otorgando valores agregados que nos distingan y nos proyecten como proveedores de calidad.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="4" size-xs="12">
+        <ion-card>
+          <img src="assets/valores.jpg" />
+          <ion-card-header>
+            <ion-card-title>Valores</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Integridad-Honradez-Confiabilidad-Justicia-Respeto-Compromiso
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <br><br><br>
+    <ion-row justify-content-center><!--Quienes somos titulo-->
+      <ion-col class="ion-text-center">
+        <h1>¿Quiénes Somos?</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center wrap> <!--Quienes somos-->
+      <ion-col size-md="3" size-xs="0"></ion-col>
+      <ion-col size-md="6" size-xs="12">
+        <ion-card>
+          <img src="assets/logo.png" />
+          <ion-card-content >
+            Somos una firma de Consultoría Empresarial y Financiera, con más de 17 años de experiencia y acreditación comercial a lo largo de la República Mexicana.
+           </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <br><br><br>
+    <ion-row justify-content-center><!--Aseguradoras-->
+      <ion-col class="ion-text-center">
+        <h1>Nuestros Clientes</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center list-lines-none><!--Aseguradoras info-->
+      <ion-col  >
+        <ion-item lines="none">
+        <ion-avatar  slot="start">
+          <img src="assets/asociados/0.jpg">
+        </ion-avatar>
+        <ion-label>Tec de Mty</ion-label>
+      </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/1.png">
+        </ion-avatar>
+        <ion-label>Pollo Qro</ion-label>
+      </ion-item>
+      </ion-col>
+      <ion-col>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/2.png">
+        </ion-avatar>
+        <ion-label>Telcel</ion-label>
+      </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/3.jpg">
+        </ion-avatar>
+        <ion-label>Hyundai</ion-label>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center list-lines-none><!--Aseguradoras info-->
+
+      <ion-col >
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/4.jpg">
+        </ion-avatar>
+        <ion-label>UVM</ion-label>
+      </ion-item>
+
+      </ion-col>
+      <ion-col >
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/5.png">
+        </ion-avatar>
+        <ion-label>BMV</ion-label>
+      </ion-item>
+
+      </ion-col>
+      <ion-col >
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/6.png">
+        </ion-avatar>
+        <ion-label>Toyota</ion-label>
+      </ion-item>
+
+      </ion-col>
+      <ion-col >
+        <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="assets/asociados/7.jpeg">
+        </ion-avatar>
+        <ion-label>H. el Campa</ion-label>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <br><br>
+  
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="datos" color="primary">
+    <a href="https://api.whatsapp.com/send?phone=&text=Me interesa su servicio">
+    <ion-button slot="start">
+      <ion-text  class="ion-text-justify" >
+        <ion-icon name="call-outline"></ion-icon>
+        Línea de servicio
+      </ion-text>
+    </ion-button>
+  </a>
+    <ion-button slot="end">
+      <ion-text  class="ion-text-justify" >
+        <ion-icon name="earth-outline"></ion-icon>
+        English      
+      </ion-text>
+    </ion-button>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-grid >
+      <ion-row align-items-end >
+        <ion-col size-sm="1" size-xs="1"  >
+          <ion-img  style="width: 80px; height: 80px;" src="assets/logo.png"></ion-img>
+        </ion-col>
+        <ion-col  offset="1" class="ion-align-self-end">
+          <ion-buttons>
+            <ion-grid>
+              <ion-row align-items-end>
+                <ion-col>
+                  <ion-button  color="primary" (click)="home()" expand="block">PERSONERC</ion-button>
+                </ion-col>
+                <!--ion-col>
+                  <ion-button  color="primary" (click)="productos()" expand="block">Productos</ion-button>
+                </ion-col-->
+                <ion-col>
+                  <ion-button  color="primary" (click)="servicios()"  expand="block">Servicios</ion-button>
+                </ion-col>
+                <ion-col>
+                  <ion-button  color="primary" (click)="contacto()"  expand="block">Contacto</ion-button>
+                </ion-col>
+
+              </ion-row>
+            </ion-grid>
+          </ion-buttons>
+              
+        </ion-col>
+      </ion-row>
+          
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
